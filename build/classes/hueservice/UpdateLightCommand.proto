@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package proto.messages;
+
+message UpdateLightCommand {
+  required int32 msg_version = 1;
+  
+  required string light_id = 2;
+  required int32 rgb_red = 3;
+  required int32 rgb_green = 4;
+  required int32 rgb_blue = 5;
+  required bool is_on = 6;
+}
